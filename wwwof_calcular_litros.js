@@ -3,7 +3,7 @@ var wwwof ='word wide web of fish';
 document.write('<center><p style="font-size:40px">wwwof </p><b><h2>',wwwof,'</h2><b></center>') ;
 let canvas;
 let texto_lado1,texto_lado2,texto_lado3,figura;
-let entrada_lado_1,entrada_lado_2,entrada_lado_3,entrada_lado_4;
+let entrada_lado_1,entrada_lado_2,entrada_lado_3;
 let cubica,prisma_rectangular,prisma_triangular;
 let parrafo;
 let Select,selected,select;
@@ -30,7 +30,7 @@ texto_lado4=document.getElementById("lado04");
 entrada_lado_1=document.getElementById("entrada_lado_1");
 entrada_lado_2=document.getElementById("entrada_lado_2");
 entrada_lado_3=document.getElementById("entrada_lado_3");
-entrada_lado_4=document.getElementById("entrada_lado_4");
+
 parrafo=document.getElementById('parrafo');
 Select = document.From2.Selecion2;
 Select=document.getElementById('Selecion1');
@@ -47,7 +47,6 @@ if (selected=='prisma_rectangular') {
 	texto_lado1.innerHTML='largo cm'
 	texto_lado2.innerHTML='alto cm'
 	texto_lado3.innerHTML='ancho cm'
-	texto_lado4.innerHTML='no es neseario'
 	acuarium=setInterval(dibujarcubo(l,w,h,0,0),minisegundos);
 }
 	
@@ -60,7 +59,6 @@ if (selected=='cubica'){
 	texto_lado1.innerHTML='largo (solamente) cm '
 	texto_lado2.innerHTML='no es neseario'
 	texto_lado3.innerHTML='no es neseario'
-	texto_lado4.innerHTML='no es neseario'
 	parrafo.innerHTML=litros
 	acuarium=setInterval(dibujarcubo(l),minisegundos);
 }
@@ -94,19 +92,17 @@ if (selected=='cubica'){
 	draw_fishtank_clasic(R,r,h);
 }*/
 if (selected=='prisma_triangular'){
-	l1=parseFloat(entrada_lado_1.value)
-	l2=parseFloat(entrada_lado_2.value)
-	l3=parseFloat(entrada_lado_4.value)
+	b=parseFloat(entrada_lado_1.value)
+	Hbase=parseFloat(entrada_lado_2.value)
 	h=parseFloat(entrada_lado_3.value)
-	perimetro=l1+l2+l3
-	litros=h*perimetro
-	litros=	litros/100
-	texto_lado1.innerHTML='lado 1 cm'
-	texto_lado2.innerHTML='lado 2 cm'
-	texto_lado4.innerHTML='lado 3 cm'
-	texto_lado3.innerHTML='alto  cm'
+	//perimetro=l1+l2+l3
+	litros=((b*Hbase)/2)*h
+	litros=	litros/1000
+	texto_lado1.innerHTML='largo base cm'
+	texto_lado2.innerHTML='altura de la base cm'
+	texto_lado3.innerHTML='altura 3 cm'
 	parrafo.innerHTML=litros+"litros"+"<h1>dibuja el lado 1</h1>"
-	dibujar_prisma(l1,h,3)
+	dibujar_prisma(b,h,3)
 }
 if (selected=='cilindro'){
 	R=parseFloat(entrada_lado_1.value)
@@ -116,8 +112,6 @@ if (selected=='cilindro'){
 	texto_lado1.innerHTML='radio cm'
 	texto_lado2.innerHTML='alto cm'
 	texto_lado3.innerHTML='no es neseario'
-	texto_lado4.innerHTML='no es neseario'
-
 	parrafo.innerHTML=litros+"litros"
 	dibujar_prisma(R,h,24)
 }
