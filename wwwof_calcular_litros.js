@@ -3,7 +3,7 @@ var wwwof ='word wide web of fish';
 document.write('<center><p style="font-size:40px">wwwof </p><b><h2>',wwwof,'</h2><b></center>') ;
 let canvas;
 let texto_lado1,texto_lado2,texto_lado3,figura;
-let entrada_lado_1,entrada_lado_2,entrada_lado_3;
+let entrada_lado_1,entrada_lado_2,entrada_lado_3,entrada_lado_4;
 let cubica,prisma_rectangular,prisma_triangular;
 let parrafo;
 let Select,selected,select;
@@ -11,7 +11,7 @@ let l,r,R,w,h;
 let litros ,acuarium;
 let angle;
 let y,x;
-let half_torus,torusVOL,radius1,radius2,fishtank_classic,cilindro;
+let half_torus,torusVOL,radius1,radius2,fishtank_classic,cilindro,perimetro;
 let minisegundos=100;
 
 function calcular_litros() {
@@ -26,10 +26,11 @@ figura=document.getElementById("figura");
 texto_lado1=document.getElementById("lado01");
 texto_lado2=document.getElementById("lado02");
 texto_lado3=document.getElementById("lado03");
-
+texto_lado4=document.getElementById("lado04");
 entrada_lado_1=document.getElementById("entrada_lado_1");
 entrada_lado_2=document.getElementById("entrada_lado_2");
 entrada_lado_3=document.getElementById("entrada_lado_3");
+entrada_lado_4=document.getElementById("entrada_lado_4");
 parrafo=document.getElementById('parrafo');
 Select = document.From2.Selecion2;
 Select=document.getElementById('Selecion1');
@@ -43,9 +44,10 @@ if (selected=='prisma_rectangular') {
 
 	parrafo.innerHTML=litros
 	figura.innerHTML='prisma_rectangular'
-	texto_lado1.innerHTML='largo'
-	texto_lado2.innerHTML='alto'
-	texto_lado3.innerHTML='ancho'
+	texto_lado1.innerHTML='largo cm'
+	texto_lado2.innerHTML='alto cm'
+	texto_lado3.innerHTML='ancho cm'
+	texto_lado4.innerHTML='no es neseario'
 	acuarium=setInterval(dibujarcubo(l,w,h,0,0),minisegundos);
 }
 	
@@ -55,9 +57,10 @@ if (selected=='cubica'){
 
 	console.log(litros);
 	figura.innerHTML='cubica'
-	texto_lado1.innerHTML='largo (solamente) '
+	texto_lado1.innerHTML='largo (solamente) cm '
 	texto_lado2.innerHTML='no es neseario'
 	texto_lado3.innerHTML='no es neseario'
+	texto_lado4.innerHTML='no es neseario'
 	parrafo.innerHTML=litros
 	acuarium=setInterval(dibujarcubo(l),minisegundos);
 }
@@ -91,26 +94,32 @@ if (selected=='cubica'){
 	draw_fishtank_clasic(R,r,h);
 }*/
 if (selected=='prisma_triangular'){
-	H=parseFloat(entrada_lado_1.value)
-	b=parseFloat(entrada_lado_2.value)
+	l1=parseFloat(entrada_lado_1.value)
+	l2=parseFloat(entrada_lado_2.value)
+	l3=parseFloat(entrada_lado_4.value)
 	h=parseFloat(entrada_lado_3.value)
-	litros=((h*b)/2)*H
-	figura.innerHTML='prisma_triangular'
-	texto_lado1.innerHTML='largo'
-	texto_lado2.innerHTML='ancho'
-	texto_lado3.innerHTML='alto '
-	parrafo.innerHTML=litros+"<h1>no image</h1>"
-
+	perimetro=l1+l2+l3
+	litros=h*perimetro
+	litros=	litros/100
+	texto_lado1.innerHTML='lado 1 cm'
+	texto_lado2.innerHTML='lado 2 cm'
+	texto_lado4.innerHTML='lado 3 cm'
+	texto_lado3.innerHTML='alto  cm'
+	parrafo.innerHTML=litros+"litros"+"<h1>dibuja el lado 1</h1>"
+	dibujar_prisma(l1,h,3)
 }
 if (selected=='cilindro'){
 	R=parseFloat(entrada_lado_1.value)
 	h=parseFloat(entrada_lado_2.value)
 	litros=PI*(R**2)*h
-	texto_lado1.innerHTML='radio'
-	texto_lado2.innerHTML='alto'
+	litros=	litros/1000
+	texto_lado1.innerHTML='radio cm'
+	texto_lado2.innerHTML='alto cm'
 	texto_lado3.innerHTML='no es neseario'
-	parrafo.innerHTML=litros+"<h1>no image</h1>"
+	texto_lado4.innerHTML='no es neseario'
 
+	parrafo.innerHTML=litros+"litros"
+	dibujar_prisma(R,h,24)
 }
 }
 
@@ -137,4 +146,16 @@ function draw_fishtank_clasic(R,r,h){
 	ellipsoid(R,h,R);
 }
 */
+function dibujar_prisma(R,h,s){
+	frameCount;
+	background(200);
+	/*
+	rotateX(frameCount * 0.01);
+  	rotateY(frameCount * 0.01);
+	translate(0, 0);*/
+
+	rotateX(frameCount * 0.01);
+  	rotateY(frameCount * 0.01);
+	cylinder(R,h,s);
+}
 setInterval(calcular_litros,minisegundos);
