@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="wwwof_calcular_litros.css">
+	<script type="text/javascript" src="wwwof_calcular_litros.js"></script>
+	<script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="p5/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+	<title>wwwof calculate litrers</title>
+</head>
+
+<body >
+
+<form id="From1" name="From2" >
+
+large<input type="number" id="large">
+deep<input type="number" id="deep">
+width<input type="number" id="width">
+<select id="Select1" name="Select2">
+  <option id="rectangle" value="rectangle">rectangle</option>
+  <option id="cubic" value="cubic">cubic</option>
+
+</select>
+<br><br>
+<input type="button" onclick="sumitliters()" value="sumit">
+<p id="parrafo" ></p>
+</form>
+<center><p id="draw"></p></center>
+</body>
+</html>
