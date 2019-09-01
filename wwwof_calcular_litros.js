@@ -3,7 +3,7 @@ var wwwof ='word wide web of fish';
 document.write('<center><p style="font-size:40px">wwwof </p><b><h1>',wwwof,'</h1><b></center>') ;
 
 function sumitliters() {
-canvas=createCanvas(1000, 1000, WEBGL);
+canvas=createCanvas(500, 500, WEBGL);
 x = (windowWidth - width) / 2;
 //y = (windowHeight - height) / 2;
 y=250;
@@ -26,10 +26,10 @@ if (selected=='rectangle') {
 	console.log(liters)
 	parrafo=document.getElementById('parrafo');
 	parrafo.innerHTML=liters
-	drawcube(l,w,d,0,0);
+	acuarium=setInterval(drawcube(l,w,d,0,0),100);
 }
 	
-else {
+if (selected=='cubic'){
 	l=large.value
 	liters=(l**3)/1000;
 	width.disabled= true;
@@ -39,9 +39,7 @@ else {
 	console.log(liters);
 	parrafo=document.getElementById('parrafo');
 	parrafo.innerHTML=liters
-	acuarium=drawcube(l);
-	draw=document.getElementById('draw');
-	draw.innerHTML=acuarium;
+	acuarium=setInterval(drawcube(l),100);
 }
 }
 
@@ -54,3 +52,4 @@ function drawcube(l,d,w,x,y) {
 //	draw=document.getElementById('draw');
 //	draw.innerHTML=acuarium;
 }
+//setInterval(sumitliters,100);
