@@ -36,7 +36,7 @@ if (selected=='cubic'){
 	console.log(liters);
 
 	parrafo.innerHTML=liters
-	acuarium=setInterval(drawcube(H),100);
+	acuarium=setInterval(drawcube(h),100);
 }
 if (selected=='fishtank_classic'){
 	radius1=parseFloat(large.value);
@@ -56,30 +56,26 @@ if (selected=='fishtank_classic'){
 	print(liters)
 	parrafo.innerHTML=liters
 	draw_fishtank_clasic(R,r,h);
+	
 }
 }
 
 function drawcube(l,w,h,x,y) {
-	frameCount;
-	background(200);
-	rotateX(frameCount * 0.01);
-  	rotateY(frameCount * 0.01);
+	actuator_figure();
 	acuarium=box(l,w,h,x,y);
 //	draw=document.getElementById('draw');
 //	draw.innerHTML=acuarium;
 }
+//this is for create aanothe convination  of figures 
 function draw_fishtank_clasic(R,r,h){
+ 	actuator_figure();
+	ellipsoid(R,h,R);
+	
+}
+function actuator_figure(){
 	frameCount;
 	background(200);
-	/*
-	rotateX(frameCount * 0.01);
+	rotateX(frameCount * 0.02);
   	rotateY(frameCount * 0.01);
-	translate(0, 0);*/
-
-	rotateX(frameCount * 0.01);
-  	rotateY(frameCount * 0.01);
-	torus(R,r);
-	cylinder(R, h);
- 	
 }
 setInterval(sumitliters,100);
