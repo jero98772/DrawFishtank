@@ -13,7 +13,7 @@ large=document.getElementById("large");
 width=document.getElementById("width");
 heigh=document.getElementById("heigh");
 cubic=document.getElementById("cubic");
-parrafo=document.getElementById('parrafo');
+paragraph=document.getElementById('paragraph');
 rectangle=document.getElementById("rectangle");
 Select = document.From2.Select2;
 Select=document.getElementById('Select1');
@@ -25,7 +25,7 @@ if (selected=='rectangle') {
 	liters=(l*h*w)/1000;
 	console.log(liters)
 
-	parrafo.innerHTML=liters
+	paragraph.innerHTML=liters
 	acuarium=setInterval(drawcube(l,w,h,0,0),100);
 }
 	
@@ -35,7 +35,7 @@ if (selected=='cubic'){
 
 	console.log(liters);
 
-	parrafo.innerHTML=liters
+	paragraph.innerHTML=liters
 	acuarium=setInterval(drawcube(h),100);
 }
 if (selected=='fishtank_classic'){
@@ -54,7 +54,7 @@ if (selected=='fishtank_classic'){
 	print(cylinder)
 	print(fishtank_classic)
 	print(liters)
-	parrafo.innerHTML=liters
+	paragraph.innerHTML=liters
 	draw_fishtank_clasic(R,r,h);
 	
 }
@@ -73,9 +73,9 @@ function draw_fishtank_clasic(R,r,h){
 	
 }
 function actuator_figure(){
-	frameCount;
+	angle;
 	background(200);
-	rotateX(frameCount * 0.02);
-  	rotateY(frameCount * 0.01);
+	rotateX(angle * 0.02);
+  	rotateY(angle * 0.01);
 }
 setInterval(sumitliters,100);
