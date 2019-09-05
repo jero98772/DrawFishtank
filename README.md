@@ -1,27 +1,27 @@
-# acuarium_p5js drawing
+# acuario_p5js dibujo
 
-this is for a science fair
+esto es para una feria de ciencias
 
-that has the parameters or requirements to talk about representative authors in this case and their applications of the experiment
+que tiene los parámetros o requisitos para hablar sobre autores representativos en este caso y sus aplicaciones del experimento
 
-reprentaive authors talking about the 300 representative authors altogether less daniel shiffman than I have a book by daniel and euclides is a  big matheical who i can rely in he
+autores representativos que hablan de los 300 autores representativos menos daniel shiffman que yo tengo un libro de daniel y euclides
 
-299 of p5js and 1 that is eclides is a genius of geometry giving a know of some formulas starting from older to younger
+299 de p5js y 1, que es un genio euclidiano de la geometría que le da al conoser algunas fórmulas que comienzan de mayor a menor
 
-# authors
+# autores
 
-euclides: *he lived in alejandria his life was little known and was or is the father of geometry and wrote some books called books that were almost as sold as the bible is believed to study in the school of Platon * and how it helps me project of the science fair * giving me the operations and basic formulas to be able to create new formulas like that of the classic fishtank so I call it and start from the beginning*
+euclides: * vivió en Alejandría, su vida era poco conocida y era o es el padre de la geometría y escribió algunos libros llamados libros que estaban casi tan vendidos como se cree que la Biblia estudia en la escuela de Platón * y cómo me ayuda a proyectar de la feria de ciencias * dándome las operaciones y fórmulas básicas para poder crear nuevas fórmulas como la clásica pecera, así que lo llamo y comienzo desde el principio *
 
-299 p5js contributors: *those people manage to work in a team correct improve create transformer with that library activating the will and not the duty and community work and contributions*
+299 contribuyentes p5js: * esas personas logran trabajar en un equipo correcto mejorar crear transformador con esa biblioteca activando la voluntad y no el deber y el trabajo y las contribuciones de la comunidad *
 
-Daniel Shiffman: *works as a programmer and master of interactive telecommunication arts and has a BA in mathematics and philosophy and he has the idea to teach different things and graphically with challenges and make  visual helps (in codes in p5js) done things with p5js to teach*
+Daniel Shiffman: * trabaja como programador y maestro de artes interactivas de telecomunicaciones y tiene una licenciatura en matemáticas y filosofía y tiene la idea de enseñar diferentes cosas y gráficamente con desafíos y ayudas visuales (códigos en p5js) hizo cosas con p5js para enseñar *
 
-# Applications
+# Aplicaciones
 
-simulations: *I could take the code and use it to make simulations of life and the aquarium using the code like the book by Daniel Shiffman, a random code walker and see how the fish behave and then squeeze with an external stimulation*
+simulaciones: * Podría tomar el código y usarlo para hacer simulaciones de la vida y el acuario usando el código como el libro de Daniel Shiffman, un andador de códigos aleatorios y ver cómo se comportan los peces y luego apretarlos con una estimulación externa *
 
-Calulate volume and modeling some forms: that is the anticipated purpose in 3D figures inclyebdo *cube side ^ 3* *rectangular prism (height) (base) (depth)* *classical fishbowl (2piR (r ^ 2) / 2) + ( pi(R ^ 2)h) where h = height r = the excess of the circle to center  R = the range of the center the border of the figure and these figures are divided by 1000 because they give in cm ^ 3*
+Volumen calular y modelado de algunas formas: ese es el propósito anticipado en figuras 3D inclyebdo * cube side ^ 3 * * prisma rectangular (altura) (base) (profundidad) * * pecera clásica (2piR (r ^ 2) / 2) + ( piR ^ 2h) donde h = altura r = el exceso del círculo hacia arriva R = el rango del centro del borde de la figura y estas figuras se dividen entre 1000 porque dan cm ^ 3 *
 
-Reliable purchase method: *If a customer wants an aquarium and does not know if what he wants long, short, tall, small this program allows some aquariums to deal with how to do 3D without ornaments but if he is going to say the volume in most of the cases*
+Método de compra confiable: * Si un cliente quiere un acuario y no sabe si lo que quiere es largo, corto, alto, pequeño, este programa permite que algunos acuarios se encarguen de cómo hacer 3D sin adornos, pero si va a decir el volumen en la mayoría de los casos *
 
-teach and create: *it may happen that someone else comes down to see what he has and do something with him and create with something or use it for something and with that he learns from something*
+enseñar y crear: * puede suceder que alguien más baje para ver lo que tiene y haga algo con él y cree con algo o lo use para algo y con eso aprenda de algo *
