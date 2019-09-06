@@ -1,6 +1,17 @@
 
 var wwwof ='word wide web of fish';
 document.write('<center><p style="font-size:40px">wwwof </p><b><h2>',wwwof,'</h2><b></center>') ;
+let canvas;
+let large,heigh,width;
+let cubic,rectangle;
+let paragraph;
+let Select,selected,select;
+let l,r,R,w,h;
+let liters ,acuarium;
+let angle;
+let y,x;
+let half_torus,torusVOL,radius1,radius2,fishtank_classic,cylinder;
+let miliseconds=100
 
 function sumitliters() {
 canvas=createCanvas(350, 350, WEBGL);
@@ -26,7 +37,7 @@ if (selected=='rectangle') {
 	console.log(liters)
 
 	paragraph.innerHTML=liters
-	acuarium=setInterval(drawcube(l,w,h,0,0),100);
+	acuarium=setInterval(drawcube(l,w,h,0,0),miliseconds);
 }
 	
 if (selected=='cubic'){
@@ -36,7 +47,7 @@ if (selected=='cubic'){
 	console.log(liters);
 
 	paragraph.innerHTML=liters
-	acuarium=setInterval(drawcube(h),100);
+	acuarium=setInterval(drawcube(h),miliseconds);
 }
 if (selected=='fishtank_classic'){
 	radius1=parseFloat(large.value);
@@ -56,26 +67,28 @@ if (selected=='fishtank_classic'){
 	print(liters)
 	paragraph.innerHTML=liters
 	draw_fishtank_clasic(R,r,h);
-	
 }
 }
 
 function drawcube(l,w,h,x,y) {
-	actuator_figure();
+	frameCount;
+	background(200);
+	rotateX(frameCount * 0.01);
+  	rotateY(frameCount * 0.01);
 	acuarium=box(l,w,h,x,y);
 //	draw=document.getElementById('draw');
 //	draw.innerHTML=acuarium;
 }
-//this is for create aanothe convination  of figures 
 function draw_fishtank_clasic(R,r,h){
- 	actuator_figure();
-	ellipsoid(R,h,R);
-	
-}
-function actuator_figure(){
-	angle;
+	frameCount;
 	background(200);
-	rotateX(angle * 0.02);
-  	rotateY(angle * 0.01);
+	/*
+	rotateX(frameCount * 0.01);
+  	rotateY(frameCount * 0.01);
+	translate(0, 0);*/
+
+	rotateX(frameCount * 0.01);
+  	rotateY(frameCount * 0.01);
+	ellipsoid(R,h,R);
 }
-setInterval(sumitliters,100);
+setInterval(sumitliters,miliseconds);
