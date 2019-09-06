@@ -11,7 +11,7 @@ let liters ,acuarium;
 let angle;
 let y,x;
 let half_torus,torusVOL,radius1,radius2,fishtank_classic,cylinder;
-let miliseconds=100
+let miliseconds=100;
 
 function sumitliters() {
 canvas=createCanvas(350, 350, WEBGL);
@@ -20,9 +20,9 @@ x=650
 //y = (windowHeight - height) / 2;
 y=10;
 canvas.position(x, y);
-large=document.getElementById("large");
-width=document.getElementById("width");
-heigh=document.getElementById("heigh");
+large=document.getElementById("side1");
+width=document.getElementById("side2");
+heigh=document.getElementById("side3");
 cubic=document.getElementById("cubic");
 paragraph=document.getElementById('paragraph');
 rectangle=document.getElementById("rectangle");
@@ -65,6 +65,14 @@ if (selected=='fishtank_classic'){
 	print(cylinder)
 	print(fishtank_classic)
 	print(liters)
+	paragraph.innerHTML=liters
+	draw_fishtank_clasic(R,r,h);
+}
+if (selected=='prima_tirangular'){
+	H=parseFloat(large.value)
+	b=parseFloat(width.value)
+	h=parseFloat(heigh.value)
+	liters=((h*b)/2)*H
 	paragraph.innerHTML=liters
 	draw_fishtank_clasic(R,r,h);
 }

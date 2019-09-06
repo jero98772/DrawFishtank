@@ -14,20 +14,57 @@
 
 <form id="From1" name="From2" >
 <br>
-large or internal  of center Radio <input type="text" id="large">
+side1  <input type="text" id="side1">
 <br>
-heigh<input type="text" id="heigh">
+side 2<input type="text" id="side2">
 <br>
-width or internal radio of torus(donut<input type="text" id="width">
+width or internal radio of torus(donut<input type="text" id="side3">
 <select id="Select1" name="Select2">
   <option id="rectangle" value="rectangle">rectangle</option>
   <option id="cubic" value="cubic">cubic</option>
  <option id="fishtank_classic" value="fishtank_classic">fishtank_classic</option>
+  <option id="prima_tirangular" value="prima_tirangular">triangular prism</option>
 </select>
 <br><br>
 <input type="button" onclick="sumitliters()" value="sumit">
 <p id="paragraph" ></p>
 </form>
-<center><p id="draw"></p></center>
+<table border="2">or internal  of center Radio
+	<tr>
+		<td>objet	</td>		
+		<td>side 1	</td>		
+		<th>side 2 </th>
+		<th>side 3 </th>
+		<th>show draw </th>
+	</tr>
+	<tr>
+		<td>fishtank_classic	</td>		
+		<td>big radio r	</td>		
+		<th>small radio R </th>
+		<th>heigth h </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>cubic	</td>
+		<th>large not needed</th>
+		<td>heigth	needed</td>
+		<th>width not needed </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>rectangular prism	</td>
+		<th>large </th>
+		<td>heigth	</td>
+		<th>width  </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>triangular prism	</td>
+		<td>heigth in z axis 	</td>
+		<th>base </th>
+		<th>heigth in x and y axis   </th>
+		<th>false</th>
+	</tr>
+</table>  
 </body>
 </html>
