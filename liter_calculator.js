@@ -73,8 +73,16 @@ if (selected=='prima_tirangular'){
 	b=parseFloat(width.value)
 	h=parseFloat(heigh.value)
 	liters=((h*b)/2)*H
-	paragraph.innerHTML=liters
-	draw_fishtank_clasic(R,r,h);
+	paragraph.innerHTML=liters+"<h1>no image</h1>"
+
+}
+if (selected=='cylinder'){
+	R=parseFloat(large.value)
+	h=parseFloat(heigh.value)
+	liters=PI*(R**2)*h
+
+	paragraph.innerHTML=liters+"<h1>no image</h1>"
+
 }
 }
 
