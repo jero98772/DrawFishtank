@@ -11,8 +11,7 @@ WiFiServer server(80);
 String header;
 
 // Auxiliar variables to store the current output state
-String output26State = "off";
-String output27State = "off";
+
 
 // Assign output variables to GPIO pins
 
@@ -59,11 +58,33 @@ void loop(){
             
             // Display the HTML web page
             client.println("<!DOCTYPE html><html>");
-            client.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
- 
+            client.println("<head>   <meta charset='UTF-8'> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+            client.println("<script type='text/javascript'>");
             
+            client.println("var wwwof ='word wide web of fish';");
+            client.println("document.write('<center><b><h2>',wwwof,'</h2><b></center>') ;");
+            client.println("let canvas ,large,heigh,width,cubic,rectangle, paragraph,Select,selected,select;");
+            client.println("let l,r,R,w,h,PI,liters ,acuarium, half_torus,torusVOL,radius1,radius2,fishtank_classic,cylinder;");
+            client.println("function sumitliters() {large=document.getElementById('side1');width=document.getElementById('side2');heigh=document.getElementById('side3');");
+            client.println("cubic=document.getElementById('cubic');rectangle=document.getElementById('rectangle');paragraph=document.getElementById('paragraph');");
+            client.println("Select = document.From2.Select2;Select=document.getElementById('Select1');selected = Select.options[Select.selectedIndex].value;");
+            client.println("if (selected=='rectangle') {l=parseFloat(large.value);w=parseFloat(width.value);h=parseFloat(heigh.value);liters=(l*h*w)/1000;console.log(liters);paragraph.innerHTML=liters;}");
+            client.println("if (selected=='cubic'){h=parseFloat(heigh.value);liters=(h**3)/1000;console.log(liters);paragraph.innerHTML=liters;}");
+            client.println("if (selected=='fishtank_classic'){radius1=parseFloat(large.value);Pi=Math.PI;R=radius1;radius2=parseFloat(width.value);r=radius2;h=parseFloat(heigh.value);torusVOL=2*Pi*R*(r**2);half_torus=torusVOL/2;cylinder=Pi*(R**2)*h;fishtank_classic=cylinder+half_torus;liters=fishtank_classic/1000;paragraph.innerHTML=liters}");
+            client.println("if (selected=='prima_tirangular'){H=parseFloat(large.value);b=parseFloat(width.value);h=parseFloat(heigh.value);liters=((h*b)/2)*H;paragraph.innerHTML=liters;}}");
             // Web Page Heading
-            client.println("</head><body><h1>feria cienias de calcular volumen <br> por Daniel Arango y Daniel Londoño</h1>");
+            
+            client.println("</script></head><body><h1>feria cienias de calcular volumen <br> por Daniel Arango y Daniel Londoño</h1>");
+            client.println("<form id='From1' name='From2' ><br>side1  <input type='text' id='side1'><br>side 2<input type='text' id='side2'><br>side 3<input type='text' id='side3'>");  
+            client.println("<select id='Select1' name='Select2'><option id='rectangle' value='rectangle'>rectangle</option><option id='cubic' value='cubic'>cubic</option>");
+            client.println("<option id='fishtank_classic' value='fishtank_classic'>fishtank_classic</option><option id='prima_tirangular' value='prima_tirangular'>triangular prism</option></select>");
+            client.println("<br><br><input type='button' onclick='sumitliters()' value='sumit'><p id='paragraph' ></p></form><br>units Liters (L), centimeters (cm)");
+            client.println("<table border='2'><tr><td>objet </td><td>side 1 </td><th>side 2 </th><th>side 3 </th><th>show draw </th></tr>");
+            client.println("<tr><td>fishtank_classic  </td><td>big radio r  </td><th>small radio R </th><th>heigth h </th><th>true</th></tr>");
+            client.println("<tr><td>cubic </td><th>large not needed</th><td>width not needed</td><th>heigth  needed   </th><th>true</th></tr>");
+            client.println("<tr><td>rectangular prism </td><th>large </th><td>width</td>   <th>heigth    </th><th>true</th></tr>");
+            client.println(" <tr><td>triangular prism  </td><td>heigth in z axis   </td><th>base </th><th>heigth in x and y axis   </th><th>false</th></tr></table>  ");
+            client.println("");
             client.println("");
             client.println("</body></html>");
             
