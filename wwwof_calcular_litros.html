@@ -2,30 +2,81 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="wwwof_calcular_litros.css">
+	<script type="text/javascript" src="wwwof_calcular_litros.js"></script>
 	<script src="p5/p5.min.js"></script>
     <script src="p5/addons/p5.dom.min.js"></script>
     <script src="p5/addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
-	<script type="text/javascript" src="wwwof_calcular_litros.js"></script>
-	<title>calular volumen de un acuario en litros </title>
+     <meta charset="UTF-8"> 
+	<title>wwwof calculate litrers</title>
 </head>
 
 <body >
 
+<p id="figura"> figura<p>
 <form id="From1" name="From2" >
 
-largo<input type="number" id="largo">
-ancho<input type="number" id="ancho">
-alto<input type="number" id="alto">
-<select id="Selecion1" name="Selecion2">
-  <option id="rectangulo" value="rectangulo">rectangulo</option>
-  <option id="cubico" value="cubico">cubico</option>
+<p id="lado01">lado 1<p>
+<input type="text" id="entrada_lado_1">
 
+<p id="lado02">side 2<p>
+<input type="text" id="entrada_lado_2">
+
+<p id="lado03">side 3<p>
+<input type="text" id="entrada_lado_3">
+<br>
+<select id="Selecion1" name="Selecion2">
+  <option id="prisma_rectangular " value="prisma_rectangular">prisma_rectangular</option>
+  <option id="cubica" value="cubica">cubica</option>
+ <!--<option id="fishtank_classic" value="fishtank_classic">fishtank_classic</option>-->
+  <option id="prisma_triangular " value="prisma_triangular">prisma_triangular</option>
+  <option id="cilindro" value="cilindro">cilindro</option>
 </select>
 <br><br>
-<input type="button" onclick="calculo()" value="sumit">
+<input type="button" onclick="calcular_litros()" value="calcular">
 <p id="parrafo" ></p>
 </form>
-<center><p id="dibujar"></p></center>
+<!--
+
+<table border="2">
+	<tr>
+		<td>objet	</td>		
+		<td>side 1	</td>		
+		<th>side 2 </th>
+		<th>side 3 </th>
+		<th>show draw </th>
+	</tr>
+	<tr>
+		<td>fishtank_classic	</td>		
+		<td>big radio r	</td>		
+		<th>small radio R </th>
+		<th>heigth h </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>cubic	</td>
+		<th>large needed</th>
+		<td>heigth not	needed</td>
+		<th>width not needed </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>rectangular prism	</td>
+		<th>large </th>
+		<td>heigth	</td>
+		<th>width  </th>
+		<th>true</th>
+	</tr>
+	<tr>
+		<td>triangular prism	</td>
+		<td>heigth in z axis 	</td>
+		<th>base </th>
+		<th>heigth in x and y axis   </th>
+		<th>false</th>
+	</tr>
+</table> 
+
+--> 
+units Liters (L), centimeters (cm)
 </body>
 </html>
