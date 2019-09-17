@@ -42,7 +42,7 @@ if (selected=='prisma_rectangular') {
 	litros=(l*h*w)/1000;
 	console.log(litros)
 
-	parrafo.innerHTML=litros
+	parrafo.innerHTML=litros+"  litros"
 	figura.innerHTML='prisma_rectangular'
 	texto_lado1.innerHTML='largo cm'
 	texto_lado2.innerHTML='alto cm'
@@ -59,7 +59,7 @@ if (selected=='cubica'){
 	texto_lado1.innerHTML='largo (solamente) cm '
 	texto_lado2.innerHTML='no es neseario'
 	texto_lado3.innerHTML='no es neseario'
-	parrafo.innerHTML=litros
+	parrafo.innerHTML=litros+" litros"
 	acuarium=setInterval(dibujarcubo(l),minisegundos);
 }
 /*if (selected=='fishtank_classic'){
@@ -107,12 +107,12 @@ if (selected=='prisma_triangular'){
 if (selected=='cilindro'){
 	R=parseFloat(entrada_lado_1.value)
 	h=parseFloat(entrada_lado_2.value)
-	litros=PI*(R**2)*h
+	litros=(R**2)*h
 	litros=	litros/1000
 	texto_lado1.innerHTML='radio cm'
 	texto_lado2.innerHTML='alto cm'
 	texto_lado3.innerHTML='no es neseario'
-	parrafo.innerHTML=litros+"litros"
+	parrafo.innerHTML=litros+" PI litros"
 	dibujar_prisma(R,h,24)
 }
 }
