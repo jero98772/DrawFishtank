@@ -91,7 +91,7 @@ cilinder(){
 	console.log(this.litros);
 	rotateX(this.frameCount  );
   	rotateY(this.frameCount );
-	this.fishtank =  cylinder(R,h,24)
+	this.fishtank =  cylinder(this.R,this.h,24)
 	//return this.fishtank
 }
 

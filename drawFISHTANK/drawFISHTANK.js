@@ -17,7 +17,7 @@ function draw() {
 		dft.rectangle()
 	}
 	else if (seleccion == 'cubica') {
-		dft.rectangle()
+		dft.cubic()
 	}
 	else if (seleccion == 'prisma_triangular'){
 		dft.triangularpris()
