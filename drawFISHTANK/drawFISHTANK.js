@@ -13,16 +13,16 @@ function draw() {
 	Select=document.getElementById('Selecion1');
 	seleccion = Select.options[Select.selectedIndex].value;
 	console.log(seleccion)
-	if (seleccion == 'prisma_rectangular') {
+	if (seleccion == 'rectagle') {
 		dft.rectangle()
 	}
-	else if (seleccion == 'cubica') {
+	else if (seleccion == 'cubic') {
 		dft.cubic()
 	}
-	else if (seleccion == 'prisma_triangular'){
+	else if (seleccion == 'triangle'){
 		dft.triangularpris()
 	}
-	else if (seleccion == 'cilindro') {
+	else if (seleccion == 'cilinder') {
 		dft.cilinder()
 	}
 

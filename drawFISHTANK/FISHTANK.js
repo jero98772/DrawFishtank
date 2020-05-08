@@ -23,11 +23,11 @@ rectangle(){
 	console.log(this.litros);
 	//this.entrada = String(this.entrada)
 	//this.litros = String(this.litros)
-	this.parrafo.innerHTML=this.litros+"  litros";
-	this.figura.innerHTML='prisma_rectangular';
-	this.lados.x.innerHTML='largo cm';
-	this.lados.y.innerHTML='alto cm';
-	this.lados.z.innerHTML='ancho cm';
+	this.parrafo.innerHTML=this.litros+"  l";
+	this.figura.innerHTML='rectagle';
+	this.lados.x.innerHTML='large cm';
+	this.lados.y.innerHTML='heigth cm';
+	this.lados.z.innerHTML='width cm';
 	this.frameCount = this.frameCount+ this.vel;
 	rotateX(this.frameCount);
   	rotateY(this.frameCount);
@@ -41,11 +41,11 @@ cubic(){
 	console.log(this.litros);
 	//this.entrada = String(this.entrada)
 	//this.litros = String(this.litros)
-	this.parrafo.innerHTML=this.litros+" litros"
-	this.figura.innerHTML='cubica'
-	this.lados.x.innerHTML='largo (solamente) cm '
-	this.lados.y.innerHTML='no es neseario'
-	this.lados.z.innerHTML='no es neseario'
+	this.parrafo.innerHTML=this.litros+" l"
+	this.figura.innerHTML='cubic'
+	this.lados.x.innerHTML='large (solamente) cm '
+	this.lados.y.innerHTML='not needed'
+	this.lados.z.innerHTML='not needed'
 	this.frameCount = this.frameCount+ this.vel;
 	rotateX(this.frameCount + 1 );
 	rotateY(this.frameCount + 1 );
@@ -62,11 +62,11 @@ triangularpris(){
 	this.litros=	this.litros/1000
 	//this.entrada = String(this.entrada)
 	//this.litros = String(this.litros)
-	this.figura.innerHTML='prisma_triangular'
-	this.parrafo.innerHTML=this.litros+"litros"
-	this.lados.x.innerHTML='largo base cm'
-	this.lados.y.innerHTML='altura de la base cm'
-	this.lados.z.innerHTML='altura 3 cm'
+	this.figura.innerHTML='trianglar prism'
+	this.parrafo.innerHTML=this.litros+"l"
+	this.lados.x.innerHTML='large of base cm'
+	this.lados.y.innerHTML='heigth of the base cm'
+	this.lados.z.innerHTML='heigth of form cm '
 	console.log(this.litros);
 	this.frameCount = this.frameCount+ this.vel;
 
@@ -83,9 +83,9 @@ cilinder(){
 	//this.entrada = String(this.entrada)
 	//this.litros = String(this.litros)
 	this.lados.x.innerHTML='radio cm'
-	this.lados.y.innerHTML='alto cm'
-	this.lados.z.innerHTML='no es neseario'
-	this.parrafo.innerHTML=this.litros+" litros"
+	this.lados.y.innerHTML='heigth cm'
+	this.lados.z.innerHTML='not needed'
+	this.parrafo.innerHTML=this.litros+" l"
 	this.frameCount = this.frameCount+ this.vel;
 
 	console.log(this.litros);
