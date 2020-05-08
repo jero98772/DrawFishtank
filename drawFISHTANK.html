@@ -9,11 +9,13 @@
 	}
 </style>
 
-<script type="text/javascript" charset="utf-8" src="libraris/p5/p5.min.js">		
+<!--script type="text/javascript" charset="utf-8" src="libraris/p5/p5.min.js">		
 </script>
 <script type="text/javascript" charset="utf-8" src="libraris/p5/addons/p5.dom.min.js">
-</script>
+</script-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.0/p5.js" integrity="sha256-06BMLzEz/H5XPiFSyP2MjdNIrDV9Z4woSTO/K0sqKi0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.0/p5.min.js" integrity="sha256-CwZPX44X9VxXbhmoN2vi9HX2txOvx+lemuTXYqIspAs=" crossorigin="anonymous"></script>
 <script type="text/javascript"charset="utf-8" src="drawFISHTANK/drawFISHTANK.js">
 </script>
 <script type="text/javascript"charset="utf-8" src="drawFISHTANK/FISHTANK.js">
@@ -24,66 +26,28 @@
 <form id="From1" name="From1" >
 
 <p id="lado01">lado 1<p>
-<input type="text" id="entrada_lado_1">
+<input type="text" id="input_side1">
 
 <p id="lado02">side 2<p>
-<input type="text" id="entrada_lado_2">
+<input type="text" id="input_side2">
 
 <p id="lado03">side 3<p>
-<input type="text" id="entrada_lado_3">
+<input type="text" id="input_side3">
 
 <br>
 <select id="Selecion1" name="Selecion1">
-  <option id="prisma_rectangular " value="prisma_rectangular">prisma rectangular</option>
-  <option id="cubica" value="cubica">cubica</option>
+  <option id="prisma_rectangular " value="rectagle">rectagle</option>
+  <option id="cubica" value="cubic">cubic</option>
  <!--<option id="fishtank_classic" value="fishtank_classic">fishtank_classic</option>-->
-  <option id="prisma_triangular " value="prisma_triangular">prisma triangular</option>
-  <option id="cilindro" value="cilindro">cilindro</option>
+  <option id="prisma_triangular " value="triangle">trianglar prism</option>
+  <option id="cilindro" value="cilinder">cilinder</option>
 </select>
 <br><br>
-<input type="button"  value="calcular">
+<input type="button"  value="calculate">
 <p id="parrafo" ></p>
 </form>
 <!--
 
-<table border="2">
-	<tr>
-		<td>objet	</td>		
-		<td>side 1	</td>		
-		<th>side 2 </th>
-		<th>side 3 </th>
-		<th>show draw </th>
-	</tr>
-	<tr>
-		<td>fishtank_classic	</td>		
-		<td>big radio r	</td>		
-		<th>small radio R </th>
-		<th>heigth h </th>
-		<th>true</th>
-	</tr>
-	<tr>
-		<td>cubic	</td>
-		<th>large needed</th>
-		<td>heigth not	needed</td>
-		<th>width not needed </th>
-		<th>true</th>
-	</tr>
-	<tr>
-		<td>rectangular prism	</td>
-		<th>large </th>
-		<td>heigth	</td>
-		<th>width  </th>
-		<th>true</th>
-	</tr>
-	<tr>
-		<td>triangular prism	</td>
-		<td>heigth in z axis 	</td>
-		<th>base </th>
-		<th>heigth in x and y axis   </th>
-		<th>false</th>
-	</tr>
-</table> 
 
---> 
-unidades Litros (L), centimetros (cm) <h5>y por si la bascula esta en onzas 33.814</h5>
+units  liters (L), centimeters (cm) 
 
