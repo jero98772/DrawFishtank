@@ -4,22 +4,22 @@ DRAWFISHTANK is a part of proyects of wwwofish [wwwofish git repo](https://githu
 # requirements included (P5js)
 p5js is  incluide in hyperlink
 # barnchs 
-#### master
+### master
 depend of setInterval() for reload animation
 ### how to install
 
       git clone  https://github.com/jero98772/dibujo_acuario_p5js.git
-#### español
+### español
 have some things in spanish like *letter_for_science_fair* and depend of setInterval() for reload animation
 ### how to install
       
        git clone -b español  https://github.com/jero98772/dibujo_acuario_p5js.git
-#### esp32_server_to_expose
+### esp32_server_to_expose
 is maded for make the presentation of science fair more interactive work without p5js 
 ### how to install
       
       git clone -b esp32_server_to_expose  https://github.com/jero98772/dibujo_acuario_p5js.git
-#### drawFISHTANK(here)
+### drawFISHTANK(here)
 this have is made in OOP for not use the fuction setInterval() for reload page
 ### how to install
 
