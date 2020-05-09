@@ -1,4 +1,3 @@
-
 class fishtank{
 	constructor() {
 		this.figura=document.getElementById("figura");
