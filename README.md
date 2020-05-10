@@ -1,27 +1,66 @@
-# acuarium_p5js drawing
+# DRAWFISHTANK
+DRAWFISHTANK is a proyect for draw a possible forms of fishtank can be easy to calcuate and draw 
+DRAWFISHTANK is a part of proyects of wwwofish [wwwofish git repo](https://github.com/jero98772/wwwofish)
+# requirements included (P5js)
+p5js is  incluide in hyperlink
+# barnchs 
+### master
+depend of setInterval() for reload animation
+### how to install
 
-this is for a science fair
+      git clone  https://github.com/jero98772/dibujo_acuario_p5js.git
+### español
+have some things in spanish like *letter_for_science_fair* and depend of setInterval() for reload animation
+### how to install
+      
+       git clone -b español  https://github.com/jero98772/dibujo_acuario_p5js.git
+#### how to run and use 
+execute  drawFISHTANK.html and the program open will be ask you  the inputs to calculate depedes of drop-down list 
 
-that has the parameters or requirements to talk about representative authors in this case and their applications of the experiment
+## esp32_server_to_expose
+is maded for make the presentation of science fair more interactive work without p5js 
+#### how to install
+      
+      git clone -b esp32_server_to_expose  https://github.com/jero98772/dibujo_acuario_p5js.git
+ 
+#### what i need 
+you need a esp32 and arduino ide
+#### upload to esp32(here)
+this video can help you [youtube](https://www.youtube.com/watch?v=2DL8FlrBTDs)
+go to preferences and add in "additional boards manage URLs"  this 
+    
+    https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
+this is for you can download borad and libraris in esp32 
 
-reprentaive authors talking about the 300 representative authors altogether less daniel shiffman than I have a book by daniel and euclides is a  big matheical who i can rely in he
+go to boards and search esp32 and download
 
-299 of p5js and 1 that is eclides is a genius of geometry giving a know of some formulas starting from older to younger
+and you need WiFi.h to generate a network (if you need install go to manage libaris and search and install)
 
-# authors
+verify that all working and click in upload
 
-euclides: *he lived in alejandria his life was little known and was or is the father of geometry and wrote some books called books that were almost as sold as the bible is believed to study in the school of Platon * and how it helps me project of the science fair * giving me the operations and basic formulas to be able to create new formulas like that of the classic fishtank so I call it and start from the beginning*
+#### how run and use
+upload file "esp32_server_to_expose" default to esp32 with before configurations and conenct to wifi of esp32 (default wifi are "feria_ciencias_volumenes")the program open will be ask you  the inputs 
+## drawFISHTANK
+this have is made in OOP for not use the fuction setInterval() for reload page
+#### how to install
 
-299 p5js contributors: *those people manage to work in a team correct improve create transformer with that library activating the will and not the duty and community work and contributions*
+     git clone -b drawFISHTANK  https://github.com/jero98772/dibujo_acuario_p5js.git
+#### how  run and use 
+execute  drawFISHTANK.html and the program open will be ask you  the inputs to calculate depedes of drop-down list 
 
-Daniel Shiffman: *works as a programmer and master of interactive telecommunication arts and has a BA in mathematics and philosophy and he has the idea to teach different things and graphically with challenges and make  visual helps (in codes in p5js) done things with p5js to teach*
+# what i can calculate  with drop-down list
+## figures with form like
 
-# Applications
+ cubic --> (a pow 2)/1000 = volumen in liters
 
-simulations: *I could take the code and use it to make simulations of life and the aquarium using the code like the book by Daniel Shiffman, a random code walker and see how the fish behave and then squeeze with an external stimulation*
+ rectagle --> (side1 * side2 * side3)/1000 = volume in liters 
 
-Calulate volume and modeling some forms: that is the anticipated purpose in 3D figures inclyebdo *cube side ^ 3* *rectangular prism (height) (base) (depth)* *classical fishbowl (2piR (r ^ 2) / 2) + ( pi(R ^ 2)h) where h = height r = the excess of the circle to center  R = the range of the center the border of the figure and these figures are divided by 1000 because they give in cm ^ 3*
+ triangle --> (((base * base_heigth)/2) * Heigth)/1000 = volume in liters
 
-Reliable purchase method: *If a customer wants an aquarium and does not know if what he wants long, short, tall, small this program allows some aquariums to deal with how to do 3D without ornaments but if he is going to say the volume in most of the cases*
+ cylinder --> (3.141592653592 * Radio * Heigth)/1000 = volume in liters
 
-teach and create: *it may happen that someone else comes down to see what he has and do something with him and create with something or use it for something and with that he learns from something*
+
+
+### contributes with donations
+	
+	- Bitcoin: tb1qgt4trnnsxdmfcpnydkmk8ht0y4esg4cdvzmhaz
