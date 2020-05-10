@@ -1,27 +1,66 @@
-# acuario_p5js dibujo
+# DRAWFISHTANK
+DRAWFISHTANK is a proyect for draw a possible forms of fishtank can be easy to calcuate and draw 
+DRAWFISHTANK is a part of proyects of wwwofish [wwwofish git repo](https://github.com/jero98772/wwwofish)
+# requirements included (P5js)
+p5js is  incluide in hyperlink
+# barnchs 
+### master
+depend of setInterval() for reload animation
+### how to install
 
-esto es para una feria de ciencias
+      git clone  https://github.com/jero98772/dibujo_acuario_p5js.git
+### español (here)
+have some things in spanish like *letter_for_science_fair* and depend of setInterval() for reload animation
+### how to install
+      
+       git clone -b español  https://github.com/jero98772/dibujo_acuario_p5js.git
+#### how to run and use 
+execute  drawFISHTANK.html and the program open will be ask you  the inputs to calculate depedes of drop-down list 
 
-que tiene los parámetros o requisitos para hablar sobre autores representativos en este caso y sus aplicaciones del experimento
+## esp32_server_to_expose
+is maded for make the presentation of science fair more interactive work without p5js 
+#### how to install
+      
+      git clone -b esp32_server_to_expose  https://github.com/jero98772/dibujo_acuario_p5js.git
+ 
+#### what i need 
+you need a esp32 and arduino ide
+#### upload to esp32
+this video can help you [youtube](https://www.youtube.com/watch?v=2DL8FlrBTDs)
+go to preferences and add in "additional boards manage URLs"  this 
+    
+    https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
+this is for you can download borad and libraris in esp32 
 
-autores representativos que hablan de los 300 autores representativos menos daniel shiffman que yo tengo un libro de daniel y euclides
+go to boards and search esp32 and download
 
-299 de p5js y 1, que es un genio euclidiano de la geometría que le da al conoser algunas fórmulas que comienzan de mayor a menor
+and you need WiFi.h to generate a network (if you need install go to manage libaris and search and install)
 
-# autores
+verify that all working and click in upload
 
-euclides: * vivió en Alejandría, su vida era poco conocida y era o es el padre de la geometría y escribió algunos libros llamados libros que estaban casi tan vendidos como se cree que la Biblia estudia en la escuela de Platón * y cómo me ayuda a proyectar de la feria de ciencias * dándome las operaciones y fórmulas básicas para poder crear nuevas fórmulas como la clásica pecera, así que lo llamo y comienzo desde el principio *
+#### how run and use
+upload file "esp32_server_to_expose" default to esp32 with before configurations and conenct to wifi of esp32 (default wifi are "feria_ciencias_volumenes")the program open will be ask you  the inputs 
+## drawFISHTANK
+this have is made in OOP for not use the fuction setInterval() for reload page
+#### how to install
 
-299 contribuyentes p5js: * esas personas logran trabajar en un equipo correcto mejorar crear transformador con esa biblioteca activando la voluntad y no el deber y el trabajo y las contribuciones de la comunidad *
+     git clone -b drawFISHTANK  https://github.com/jero98772/dibujo_acuario_p5js.git
+#### how  run and use 
+execute  drawFISHTANK.html and the program open will be ask you  the inputs to calculate depedes of drop-down list 
 
-Daniel Shiffman: * trabaja como programador y maestro de artes interactivas de telecomunicaciones y tiene una licenciatura en matemáticas y filosofía y tiene la idea de enseñar diferentes cosas y gráficamente con desafíos y ayudas visuales (códigos en p5js) hizo cosas con p5js para enseñar *
+# what i can calculate  with drop-down list
+## figures with form like
 
-# Aplicaciones
+ cubic --> (a pow 2)/1000 = volumen in liters
 
-simulaciones: * Podría tomar el código y usarlo para hacer simulaciones de la vida y el acuario usando el código como el libro de Daniel Shiffman, un andador de códigos aleatorios y ver cómo se comportan los peces y luego apretarlos con una estimulación externa *
+ rectagle --> (side1 * side2 * side3)/1000 = volume in liters 
 
-Volumen calular y modelado de algunas formas: ese es el propósito anticipado en figuras 3D inclyebdo * cube side ^ 3 * * prisma rectangular (altura) (base) (profundidad) * * pecera clásica (2piR (r ^ 2) / 2) + ( piR ^ 2h) donde h = altura r = el exceso del círculo hacia arriva R = el rango del centro del borde de la figura y estas figuras se dividen entre 1000 porque dan cm ^ 3 *
+ triangle --> (((base * base_heigth)/2) * Heigth)/1000 = volume in liters
 
-Método de compra confiable: * Si un cliente quiere un acuario y no sabe si lo que quiere es largo, corto, alto, pequeño, este programa permite que algunos acuarios se encarguen de cómo hacer 3D sin adornos, pero si va a decir el volumen en la mayoría de los casos *
+ cylinder --> (3.141592653592 * Radio * Heigth)/1000 = volume in liters
 
-enseñar y crear: * puede suceder que alguien más baje para ver lo que tiene y haga algo con él y cree con algo o lo use para algo y con eso aprenda de algo *
+
+
+### contributes with donations
+	
+	- Bitcoin: tb1qgt4trnnsxdmfcpnydkmk8ht0y4esg4cdvzmhaz
