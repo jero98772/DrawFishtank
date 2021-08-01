@@ -62,8 +62,3 @@ execute  drawFISHTANK.html and the program open will be ask you  the inputs to c
 
  cylinder --> (3.141592653592 * Radio * Heigth)/1000 = volume in liters
 
-
-
-### contributes with donations
-	
-	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
